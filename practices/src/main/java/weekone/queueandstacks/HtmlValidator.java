@@ -22,7 +22,6 @@ public class HtmlValidator {
 
     private static Stack<HtmlTag> areTagsWellFormatted(Queue<HtmlTag> tags1) {
         Stack<HtmlTag> tags = new Stack<>();
-        System.out.println(tags1);
         for (HtmlTag tag : tags1) {
             if (tag.isOpenTag()) {
                 tags.push(tag);
