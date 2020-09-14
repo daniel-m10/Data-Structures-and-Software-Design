@@ -27,7 +27,6 @@ public class HtmlValidator {
                 tags.push(tag);
             } else if (!tag.isSelfClosing()) {
                 if (tags.isEmpty()) {
-                    tags.push(tag);
                     return null;
                 }
                 HtmlTag popped = tags.pop();
