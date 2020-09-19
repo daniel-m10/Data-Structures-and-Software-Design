@@ -136,9 +136,7 @@ public class BinarySearchTree<E extends Comparable<E>> {
 
     // Method #1.
     public Node findNode(E val) {
-        return Objects.isNull(val) ? null :
-                findNode(root, val); // this line is here only so this code will compile if you don't modify it
-
+        return Objects.isNull(val) ? null : findNode(root, val);
     }
 
     private Node findNode(Node n, E value) {
